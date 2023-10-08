@@ -1,0 +1,168 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #408bdb;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+a#loginButton {
+    color: #fff;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+a#loginButton:hover {
+    background-color: #408bdb;
+    color: #fff;
+}
+
+/* Main content styles */
+.main-content {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.main-content .clean-water-info {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.main-content .clean-water-info h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main-content .clean-water-info p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Importance section styles */
+.main-content .importance {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.main-content .importance h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main-content .importance p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Sources section styles */
+.main-content .sources {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.main-content .sources h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main-content .sources p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+footer li a:hover {
+    text-decoration: underline;
+    color: #4CAF50; /* Change link color on hover */
+}
+/* Media Query for laptops (1024px - 1440px) */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    /* Adjust styles for laptop screens here */
+    body {
+        font-size: 16px;
+    }
+
+    .main-content .clean-water-info,
+    .main-content .importance,
+    .main-content .sources {
+        max-width: 600px;
+    }
+}

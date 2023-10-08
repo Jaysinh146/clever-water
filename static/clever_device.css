@@ -1,0 +1,160 @@
+/* Header styles */
+.clever-header {
+    background: linear-gradient(to bottom, #6FC5E0, #4CAFDC);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* Styles for Features Section */
+.features {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.9) 100%);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align content horizontally */
+}
+
+.feature {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align text */
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Add a subtle lift effect on hover */
+}
+
+.feature h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* Styles for Divider Section */
+.divider {
+    display: flex;
+    flex-direction: row; /* Display horizontally */
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.9) 100%), #f9c5d1; /* Light shade of pink with white gradient */
+}
+
+.text-section,
+.image-section {
+    flex: 1;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-section h2,
+.image-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    opacity: 0; /* Initially hidden */
+}
+
+.text-section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0; /* Initially hidden */
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially hidden */
+}
+
+/* Animation for text and image section on hover */
+.divider:hover .text-section,
+.divider:hover .image-section {
+    transform: translateY(-10px); /* Add a subtle lift effect on hover */
+}
+
+/* Animation for text and image content fade-in on hover */
+.divider:hover .text-section h2,
+.divider:hover .text-section p,
+.divider:hover .image-section img {
+    opacity: 1;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+    color: #4CAF50; /* Change link color on hover */
+}

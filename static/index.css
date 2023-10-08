@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.gradient-header {
+    background-image: linear-gradient(to right, #4fc3f7, #a0d8ef);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0; /* Added margin */
+}
+
+.logo-container {
+    margin: -10px 0; /* Adjusted margin */
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Center align vertically */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 20px; /* Added padding */
+    border-radius: 4px; /* Added border-radius for container effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+}
+
+.nav-links li a:hover {
+    color: #00438a;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+}
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #00438a;
+}
+.main-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.search-container, .info-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.search-container:hover, .info-container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button#searchButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#searchButton:hover {
+    background-color: #408bdb;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.slide {
+    flex: 0 0 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+}
+
+.slide:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+.slide:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.section.about-us, .section.what-is-clean-water, .section.endangered-species {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.section.about-us:hover, .section.what-is-clean-water:hover, .section.endangered-species:hover {
+    transform: scale(1.02);
+}
+
+.section.about-us h2, .section.what-is-clean-water h2, .section.endangered-species h2 {
+    color: #007bff;
+}
+
+.section.about-us p, .section.what-is-clean-water p, .section.endangered-species p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.about-us-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #408bdb;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.clean-water-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #408bdb;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.clean-water-button:hover {
+    background-color: #408bdb;
+}
+.endangered-animal-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #408bdb;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.endangered-button:hover {
+    background-color: #408bdb;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+footer li a:hover {
+    text-decoration: underline;
+    color: #4CAF50; /* Change link color on hover */
+}
