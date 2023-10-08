@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clever Water</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="gradient-header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='Clever (1).png') }}" alt="Logo">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="clean_water.html">Clean Water</a></li>
+                <li><a href="endangered_animal.html">Endangered Species</a></li>
+                <li><a href="clever_device.html">Clever Device</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="{{ url_for('login') }}" id="loginButton">Login</a>
+    </header>
+</body>
+    <section class="main-content"> <h2>Find Clean Water Sources Near You</h2>
+        <div class="search-container">
+            <form method="POST" action="/search">
+                <input type="text" placeholder="Enter your location" name="location" id="locationInput">
+                <button type="submit" id="searchButton">Search</button>
+            </form>
+        </div>
+        <div class="info-container">
+            <h2>Learn about endangered species in your local water bodies.</h2>
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="section about-us">
+            <h2>About Us</h2> 
+            <br />
+            <p>We are dedicated to providing information about clean water sources and raising awareness about endangered water species.</p>
+            <br />
+            <a href="about_us.html" class="about-us-button">Click Here</a>
+        </div>
+        <div class="section what-is-clean-water">
+            <h2>What is Clean Water</h2>
+            <br />
+            <p>Clean water refers to water that is safe for consumption and free from pollutants. It is essential for the well-being of all living organisms.</p>
+            <br />
+            <a href="clean_water.html" class="clean-water-button">Click Here</a>
+        </div>
+        <div class="section endangered-species">
+            <h2>Endangered Species</h2>
+            <br />
+            <p>Learn about the various species of aquatic life that are at risk of extinction due to habitat destruction and pollution.</p>
+            <br />
+            <a href="endangered_animal.html" class="endangered-animal-button">Click Here</a>
+        </div>
+        <div class="section info-container">
+            <h2>Endangered Water Species</h2>
+            <p>Learn about endangered species in your local water bodies.</p>
+        </div>
+        <div class="section info-container">
+            <h2>Our Clever Device</h2>
+            <p>The smart device</p>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="clean_water.html">Clean Water</a></li>
+            <li><a href="endangered_animal.html">Endangered Species</a></li>
+            <li><a href="clever_device.html">Clever Device</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <br />
+            <p>2023 Clever Water. All Rights Reserved</p>
+        </ul>
+    </footer>
+</body>
+</html>
+    <script src="index.js"></script>
+</body>
+</html>

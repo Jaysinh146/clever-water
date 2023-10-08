@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><head> <link rel="stylesheet" href="{{ url_for('static', filename='contact_us.css') }}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Water App</title>
+    <link rel="stylesheet" href="contact_us.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <section class="main-content">
+        <div class="contact-form">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or feedback, please feel free to contact us using the form below:</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="clean_water.html">What is Clean Water</a></li>
+            <li><a href="endangered_animal.html">Endangered Species</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

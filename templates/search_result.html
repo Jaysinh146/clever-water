@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    <link rel="stylesheet" href="{{ url_for('static', filename='search_result.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality in {{ location }}</title>
+</head>
+<body>
+    <h2>Water Quality in {{ location }}</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for parameter, value in water_quality.items() %}
+            <tr>
+                <td>{{ parameter }}</td>
+                <td>{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><a href="{{ url_for('index') }}">Back to Home</a></p>
+</body>
+</html>
